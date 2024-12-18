@@ -169,6 +169,6 @@ function typeText() {
   if (index < text.length) {
     textExample.innerHTML += text.charAt(index);
     index++;
-    setTimeout(typeText, 150); // Задержка между символами
+    setTimeout(typeText, 100); // Задержка между символами
   }
 }
