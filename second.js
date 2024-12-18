@@ -125,7 +125,9 @@ if (flag === 0) {
                             easing: "easeInOutQuad",
                             loop: false,
                             complete: function () {
-                              typeText();
+                              setTimeout(function () {
+                                typeText();
+                              }, 200);
                             },
                           });
                           anime({
@@ -156,13 +158,17 @@ if (flag === 0) {
   });
 }
 
-const text = "Всем привет!\nС вами Тип тот самый.\n";
+const text =
+  "Привет, зайка! Я поздравляю тебя с Новым годом! Все пожелания я тебе донесу в \
+другом формате, перед тем как ты получишь свой подарок) Но кое-что все же скажу: в \
+этом году было много всего хорошего, и я рад, что эти моменты связаны с тобой. Я тебя \
+невероятно люблю! Пришло время для кое-чего важного)";
 let index = 0;
 
 function typeText() {
   if (index < text.length) {
-    textExample.value += text.charAt(index);
+    textExample.innerHTML += text.charAt(index);
     index++;
-    setTimeout(typeText, 100); // Задержка между символами
+    setTimeout(typeText, 150); // Задержка между символами
   }
 }
