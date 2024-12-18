@@ -117,11 +117,11 @@ h1 {
 }
 .showcase-carousel__item p {
   position: absolute;
-  bottom: -85px;
+  bottom: -75px;
   width: 100%;
   font-family: assassin-st, sans-serif;
-  font-size: 32px;
-  color: rgba(255, 255, 255, 0.5);
+  font-size: 33px;
+  color: fff;
   text-shadow: rgb(58 78 94) 0 0 10px;
 }
 .showcase-carousel__item.swiper-slide-active {
